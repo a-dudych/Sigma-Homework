@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Project</title>
+    <meta name="description" content="My final project for Sigma JS Camp">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="preloader.css">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script> 
+</head>
+<body>
+
+
+<div class="loader">
+    <span class="loader__element"></span>
+    <span class="loader__element"></span>
+    <span class="loader__element"></span>
+    <span class="loader__element"></span>
+    <span class="loader__element"></span>
+</div>
+
+<script>
+    setTimeout(() => {
+    document.body.querySelector('.loader').classList.add('hidden')
+    }, 5000);
+</script>
+
+<header class="header">
+    <div class="menu">
+        <ul class="menu_ul">
+            <li class="menu__li"><a class="menu__link" href="#about">ABOUT ME</a></li>
+            <li class="menu__li"><a class="menu__link" href="#portfolio">PORTFOLIO</a></li>
+        </ul>
+        <div class="logo menu__logo"></div>
+        <ul class="menu_ul">  
+            <li class="menu__li"><a class="menu__link" href="#blog">MY BLOG</a></li>
+            <li class="menu__li"><a class="menu__link" href="#contacts">CONTACT ME</a></li>
+        </ul>
+
+        <label class="switch" >
+            <input class="switch__input" type="checkbox">
+            <span class="switch__slider"></span>
+            <img class="switch__icon" src="./images/moon.png" alt="moon-icon">
+          </label>
+
+    </div>
+
+        <div class="dashed-line-bottom">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+</header>
+
+<div class="progress-container progress-container_sticky">
+    <div class="progress-bar"></div>
+  </div> 
+
+<main>
+    <section class="retro">
+
+        <div class="dashed-line-top">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+
+        <h1 class="retro-banner retro__retro-banner">RETRO</h1>
+
+        <div class="flag retro__flag">
+            <p class="flag__text">OLD STYLE PORTFOLIO</p>
+        </div>
+
+        <div class="slider retro__slider"> 
+             <div class="slider-card">
+                <figure>
+                    <img class="slider-card__img" alt="movies" src="./images/img1.jpg">
+                    <figcaption class="slider-card__description">MOVIES</figcaption>
+                  </figure>
+              </div>
+
+              <div class="slider-card">
+                <figure>
+                    <img class="slider-card__img" alt="music" src="./images/img2.jpg">
+                    <figcaption class="slider-card__description">MUSIC</figcaption>
+                  </figure>
+              </div>
+
+              <div class="slider-card">
+                <figure>
+                    <img class="slider-card__img" src="./images/img3.jpg" alt="cooking">
+                    <figcaption class="slider-card__description">COOKING</figcaption>
+                  </figure>
+              </div>
+
+              <div class="slider-card">
+                <figure>
+                    <img class="slider-card__img" src="./images/img4.jpg" alt="exercises">
+                    <figcaption class="slider-card__description">EXERCISES</figcaption>
+                  </figure>
+              </div>
+
+              <div class="slider-card">
+                <figure>
+                    <img class="slider-card__img" src="./images/img5.jpg" alt="cows">
+                    <figcaption class="slider-card__description">COWS</figcaption>
+                  </figure>
+              </div>
+
+              <div class="slider__arrow slider__arrow_prev" onclick="plusSlides(-1)"></div>
+              <div class="slider__arrow slider__arrow_next" onclick="plusSlides(1)"></div>
+        </div>
+
+        <div class="retro__greeting">
+            <p class="retro__greeting__hello-text">"HELLO, I AM JOHN DOE</p>
+            <p class="retro__greeting__welcome-text">WELCOME TO RETRO, MY WONDERFUL THEME"</p>
+        </div>
+
+        <div class="dashed-line-bottom">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+    
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="dashed-line-top">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+        
+        <div class="section-header">
+            <h2 class="section-header__title">ABOUT ME</h2>
+            <div class="section-header__separator">
+                <div class="section-header__separator__line"></div>
+                <p class="section-header__separator__xxx">xxx</p>
+                <div class="section-header__separator__line"></div>
+            </div>
+            <p class="section-header__subtitle">I AM A GRAPHIC DESIGNER FROM BALTIMOR</p>
+        </div>
+
+        <div class="hobby-container about__hobby-container">
+
+            <div class="hobby">
+                <div class="hobby__icon">
+                    <img class="hobby__icon__img" src="./images/tv-in-circle.png"  alt="tv-icon"/>
+                </div>
+                <h3 class="hobby__title">MOVIES</h3>
+                <p class="hobby__subtitle">WHAT I WATCH</p>
+                <div class="hobby__separator"></div>
+                <p class="hobby__description">Clutter is honest! I do believe that has to the users
+                    <b>selfexpression</b>. Care. Things which is a projector operating system such formats are deep and profound and meaningful. It's the traditions of data. <u>Good design</u> should be different levels. There's no rational alternative. That's come to complexity.</p>
+            </div>
+
+            <div class="hobby">
+                <div class="hobby__icon">
+                    <img class="hobby__icon__img" alt="vinyl-icon" src="./images/vinyl-in-circle.png" />
+                </div>
+                <h3 class="hobby__title">MUSIC</h3>
+                <p class="hobby__subtitle">WHAT I LISTEN</p>
+                <div class="hobby__separator"></div>
+                <p class="hobby__description">Good design. The content, you'll love <b>powerpoint should be different</b>. It's about design is that part? Good design is making something looks. And aesthetic. And <i>colour defines</i> your interface. That cannot be overtly different. That has to chance. And restrained, low resolution, but you get rid of materials.</p>
+            </div>
+
+            <div class="hobby">
+                <div class="hobby__icon">
+                    <img class="hobby__icon__img" alt="t-shirt-icon" src="./images/t-shirt-in-circle.png" />
+                </div>
+                <h3 class="hobby__title">CLOTHES</h3>
+                <p class="hobby__subtitle">WHAT I WEAR</p>
+                <div class="hobby__separator"></div>
+                <p class="hobby__description">Very honest approach and product. The <u>other product</u> that changes function like the absence of function. And frustrating that products that it's the functional imperative, we kept going and frustrating that we are about bringing order to be better and less complicated to
+                    understand.</p>
+            </div>
+
+            <div class="hobby">
+                <div class="hobby__icon">
+                    <img class="hobby__icon__img" alt="food-icon" src="./images/food-in-circle.png" />
+                </div>
+                <h3 class="hobby__title">FOOD</h3>
+                <p class="hobby__subtitle">WHAT I EAT</p>
+                <div class="hobby__separator"></div>
+                <p class="hobby__description">Simplicity. Its context. From so many different levels. There's real simplicity is. Designing and place of the objects we're surrounded by seem trivial. There's <b>no rational alternative</b>. I think that's a very complicated problems without letting people have a very easy to mean so much that acknowledges.</p>
+            </div>
+        </div>
+
+        <div class="dashed-line-bottom">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        
+        <div class="dashed-line-top">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-header__title">PORTFOLIO</h2>
+            <div class="section-header__separator">
+                <div class="section-header__separator__line"></div>
+                <p class="section-header__separator__xxx">xxx</p>
+                <div class="section-header__separator__line"></div>
+            </div>
+            <p class="section-header__subtitle">SIMPLICITY IS THE ULTIMATE SOPHISTICATION</p>
+        </div>
+
+        <div class="filters">
+            <span class="filters__text">Filter by</span>
+
+            <div class="filter-tag" id="socialmedia" data-active="no">
+                <div class="filter-tag__arrow-left"></div>
+                <div class="filter-tag__tag-body">
+                    <div class="filter-tag__dot"></div>
+                    <p class="filter-tag__name">social media</p>
+                </div>
+            </div>
+
+            <div class="filter-tag" id="searchengines" data-active="no">
+                <div class="filter-tag__arrow-left"></div>
+                <div class="filter-tag__tag-body">
+                    <div class="filter-tag__dot"></div>
+                    <p class="filter-tag__name">search engines</p>
+                </div>
+            </div>
+
+            <div class="filter-tag" id="newsmedia" data-active="no">
+                <div class="filter-tag__arrow-left"></div>
+                <div class="filter-tag__tag-body">
+                    <div class="filter-tag__dot"></div>
+                    <p class="filter-tag__name">news media</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="portfolio-container portfolio__portfolio-container">
+                <div class="portfolio-item portfolio-container__portfolio-item" id="instagram">
+                    <div class="portfolio-item__thumbnail">
+                        <img class="portfolio-item__thumbnail portfolio-item__thumbnail_ss" alt="instagram" src="./images/instagram-screenshot.png"/>
+                    </div>
+                    <div class="portfolio-item__circle portfolio-item__circle__photo-icon">
+                    </div>
+                    <div class="portfolio-item__name">INSTAGRAM</div>
+                    <div class="portfolio-item__details">
+                        <p>Project name: Instagram</p>
+                        <p>Date: 2011</p>
+                        <p>Tech: HTML/CSS/Javascript</p>
+                        <p>Price: $1</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-container__portfolio-item" id="google">
+                    <div class="portfolio-item__thumbnail">
+                        <img class="portfolio-item__thumbnail portfolio-item__thumbnail_ss" alt="google" src="./images/google-screenshot.png"/>
+                    </div>
+                    <div class="portfolio-item__circle portfolio-item__circle__search-icon"></div>
+                    <div class="portfolio-item__name">GOOGLE</div>
+                    <div class="portfolio-item__details">
+                        <p>Project name: Google</p>
+                        <p>Date: 1999</p>
+                        <p>Tech: HTML/CSS/Javascript</p>
+                        <p>Price: $50</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-container__portfolio-item" id="nyt">
+                    <div class="portfolio-item__thumbnail">
+                        <img class="portfolio-item__thumbnail portfolio-item__thumbnail_ss" alt="nyt" src="./images/nyt-screenshot.png"/>
+                    </div>
+                    <div class="portfolio-item__circle portfolio-item__circle__note-icon"></div>
+                    <div class="portfolio-item__name">THE NEW YORK TIMES</div>
+                    <div class="portfolio-item__details">
+                        <p>Project name: The New York Times</p>
+                        <p>Date: 1997</p>
+                        <p>Tech: HTML/CSS/Javascript</p>
+                        <p>Price: $20</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-container__portfolio-item" id="linkedin">
+                    <div class="portfolio-item__thumbnail">
+                        <img class="portfolio-item__thumbnail portfolio-item__thumbnail_ss" alt="linkedin" src="./images/linkedin-screenshot.png"/>
+                    </div>
+                    <div class="portfolio-item__circle portfolio-item__circle__photo-icon"></div>
+                    <div class="portfolio-item__name">LINKEDIN</div>
+                    <div class="portfolio-item__details">
+                        <p>Project name: LinkedIn</p>
+                        <p>Date: 2008</p>
+                        <p>Tech: HTML/CSS/Javascript</p>
+                        <p>Price: $2000</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-container__portfolio-item" id="bloomberg">
+                    <div class="portfolio-item__thumbnail">
+                        <img class="portfolio-item__thumbnail portfolio-item__thumbnail_ss" alt="bloomberg" src="./images/bloomberg-screenshot.png"/>
+                    </div>
+                    <div class="portfolio-item__circle portfolio-item__circle__note-icon"></div>
+                    <div class="portfolio-item__name">BLOOMBERG</div>
+                    <div class="portfolio-item__details">
+                        <p>Project name: Bloomberg</p>
+                        <p>Date: 1997</p>
+                        <p>Tech: HTML/CSS/Javascript</p>
+                        <p>Price: $20</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-container__portfolio-item" id="ddg">
+                    <div class="portfolio-item__thumbnail">
+                        <img class="portfolio-item__thumbnail portfolio-item__thumbnail_ss" alt="DUCKDUCKGO" src="./images/ddg-screenshot.png"/>
+                    </div>
+                    <div class="portfolio-item__circle portfolio-item__circle__search-icon"></div>
+                    <div class="portfolio-item__name">DUCKDUCKGO</div>
+                    <div class="portfolio-item__details">
+                        <p>Project name: DuckDuckGo</p>
+                        <p>Date: 2012</p>
+                        <p>Tech: HTML/CSS/Javascript</p>
+                        <p>Price: $1500</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-container__portfolio-item" id="facebook">
+                    <div class="portfolio-item__thumbnail">
+                        <img class="portfolio-item__thumbnail portfolio-item__thumbnail_ss" alt="facebook" src="./images/facebook-screenshot.png"/>
+                    </div>
+                    <div class="portfolio-item__circle portfolio-item__circle__photo-icon"></div>
+                    <div class="portfolio-item__name">FACEBOOK</div>
+                    <div class="portfolio-item__details">
+                        <p>Project name: Facebook</p>
+                        <p>Date: 2004</p>
+                        <p>Tech: HTML/CSS/Javascript</p>
+                        <p>Price: $1</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-container__portfolio-item" id="yahoo">
+                    <div class="portfolio-item__thumbnail">
+                        <img class="portfolio-item__thumbnail portfolio-item__thumbnail_ss" alt="yahoo" src="./images/yahoo-screenshot.png"/>
+                    </div>
+                    <div class="portfolio-item__circle portfolio-item__circle__search-icon"></div>
+                    <div class="portfolio-item__name">YAHOO</div>
+                    <div class="portfolio-item__details">
+                        <p>Project name: Yahoo</p>
+                        <p>Date: 1998</p>
+                        <p>Tech: HTML/CSS/Javascript</p>
+                        <p>Price: $1000</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-container__portfolio-item" id="reuters">
+                    <div class="portfolio-item__thumbnail">
+                        <img class="portfolio-item__thumbnail portfolio-item__thumbnail_ss" alt="reuters" src="./images/reuters-screenshot.png"/>
+                    </div>
+                    <div class="portfolio-item__circle portfolio-item__circle__note-icon"></div>
+                    <div class="portfolio-item__name">REUTERS</div>
+                    <div class="portfolio-item__details">
+                        <p>Project name: Reuters</p>
+                        <p>Date: 1999</p>
+                        <p>Tech: HTML/CSS/Javascript</p>
+                        <p>Price: $10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="browse-all">
+                <div class="browse-all__line"></div>
+                <p class="browse-all__text">BROWSE ALL</p>
+            </div>
+
+            <div class="dashed-line-bottom">
+                <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+            </div>
+    </section>
+
+    <section class="blog" id="blog">
+
+        <div class="dashed-line-top">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-header__title">MY BLOG</h2>
+            <div class="section-header__separator">
+                <div class="section-header__separator__line"></div>
+                <p class="section-header__separator__xxx">xxx</p>
+                <div class="section-header__separator__line"></div>
+            </div>
+            <p class="section-header__subtitle">NEWS FROM MY HOUSE</p>
+        </div>
+
+        <div class="blog-container blog__blog-container">
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog1.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Magic Wheel</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">1 RESPONSE</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">It’s not it to understand them in the objects we’re playing. Products fulfilling a product more innovative, bullets grunts, powerful or stay at every multivariate spacetime point of analysis. People have enormous serial correlation. Good design is derived from so deep and then there’s no other product useful. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog2.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Lonely Road</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">3 RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">If you’ve studied design at all, you’ve probably encountered Lorem Ipsum placeholder text at some point. Anywhere there is text, but the meaning of that text isn’t particularly important, you might see Lorem Ipsum. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog3.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">I Love Gasoline Smell</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">NO RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">Many of the content, and often about their precious turfpossessed selves and principles are shortcomings of seeing and colors to cover up a paucity of design. Zero out your interface. I think that are deep and profound indeed, these tasks and showing. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog1.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Magic Wheel - 2</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">1 RESPONSE</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">It’s not it to understand them in the objects we’re playing. Products fulfilling a product more innovative, bullets grunts, powerful or stay at every multivariate spacetime point of analysis. People have enormous serial correlation. Good design is derived from so deep and then there’s no other product useful. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog2.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Lonely Road - 2</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">3 RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">If you’ve studied design at all, you’ve probably encountered Lorem Ipsum placeholder text at some point. Anywhere there is text, but the meaning of that text isn’t particularly important, you might see Lorem Ipsum. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog3.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">I Love Gasoline Smell - 2</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">NO RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">Many of the content, and often about their precious turfpossessed selves and principles are shortcomings of seeing and colors to cover up a paucity of design. Zero out your interface. I think that are deep and profound indeed, these tasks and showing. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog1.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Magic Wheel - 3</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">1 RESPONSE</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">It’s not it to understand them in the objects we’re playing. Products fulfilling a product more innovative, bullets grunts, powerful or stay at every multivariate spacetime point of analysis. People have enormous serial correlation. Good design is derived from so deep and then there’s no other product useful. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog2.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Lonely Road - 3</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">3 RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">If you’ve studied design at all, you’ve probably encountered Lorem Ipsum placeholder text at some point. Anywhere there is text, but the meaning of that text isn’t particularly important, you might see Lorem Ipsum. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog3.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">I Love Gasoline Smell - 3</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">NO RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">Many of the content, and often about their precious turfpossessed selves and principles are shortcomings of seeing and colors to cover up a paucity of design. Zero out your interface. I think that are deep and profound indeed, these tasks and showing. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog1.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Magic Wheel - 4</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">1 RESPONSE</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">It’s not it to understand them in the objects we’re playing. Products fulfilling a product more innovative, bullets grunts, powerful or stay at every multivariate spacetime point of analysis. People have enormous serial correlation. Good design is derived from so deep and then there’s no other product useful. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog2.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Lonely Road - 4</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">3 RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">If you’ve studied design at all, you’ve probably encountered Lorem Ipsum placeholder text at some point. Anywhere there is text, but the meaning of that text isn’t particularly important, you might see Lorem Ipsum. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog3.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">I Love Gasoline Smell - 4</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">NO RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">Many of the content, and often about their precious turfpossessed selves and principles are shortcomings of seeing and colors to cover up a paucity of design. Zero out your interface. I think that are deep and profound indeed, these tasks and showing. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog1.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Magic Wheel - 5</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">1 RESPONSE</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">It’s not it to understand them in the objects we’re playing. Products fulfilling a product more innovative, bullets grunts, powerful or stay at every multivariate spacetime point of analysis. People have enormous serial correlation. Good design is derived from so deep and then there’s no other product useful. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog2.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">The Lonely Road - 5</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">3 RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">If you’ve studied design at all, you’ve probably encountered Lorem Ipsum placeholder text at some point. Anywhere there is text, but the meaning of that text isn’t particularly important, you might see Lorem Ipsum. (MORE…)</div>
+                </div>    
+            </div>
+
+            <div class="blog-post blog-container__blog-post">
+                <div class="blog-post__thumbnail-container">
+                    <img class="blog-post__thumbnail-container__thumbnail" alt="blog-image" src="./images/blog3.jpg" />
+                </div>
+                <div class="blog-post__info-container">
+                    <div class="blog-post__title">I Love Gasoline Smell - 5</div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__info__date-author">JULY 28, 2014 // ADMIN // FUN, TRAVEL, TRENDS</div>
+                        <div class="blog-post__info__responses">NO RESPONSES</div>
+                    </div>
+                    <div class="blog-post__separator-line"></div>
+                    <div class="blog-post__lead">Many of the content, and often about their precious turfpossessed selves and principles are shortcomings of seeing and colors to cover up a paucity of design. Zero out your interface. I think that are deep and profound indeed, these tasks and showing. (MORE…)</div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="browse-all blog__browse-all">
+            <div class="browse-all__line"></div>
+            <p class="browse-all__text blog__browse-all__text">SHOW ALL POSTS</p>
+        </div>
+
+        <div class="dashed-line-bottom">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+
+    </section>
+
+    <section class="contacts" id="contacts">
+
+        <div class="dashed-line-top">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-header__title contacts__section-header__title">CONTACT ME</h2>
+            <div class="section-header__separator">
+                <div class="section-header__separator__line contacts__section-header__separator__line"></div>
+                <p class="contacts__section-header__separator__xxx section-header__separator__xxx">xxx</p>
+                <div class="section-header__separator__line contacts__section-header__separator__line"></div>
+            </div>
+            <p class="contacts__section-header__subtitle section-header__subtitle">I'LL BE GLAD TO ANSWER YOUR QUESTIONS!</p>
+        </div>
+
+        <form class="form-container contacts__form-container" id="contactme">
+            <input type="text" class="form-container__input" id="name" name="username" placeholder="Name" required>
+            <span class="error username-error"></span>
+            <input type="email" class="form-container__input" id="email" name="email" placeholder="Email address" required>
+            <span class="error email-error"></span>
+            <input type="text" class="form-container__input" id="subjectline" name="subject" placeholder="Subject" required>
+            <span class="error subject-error"></span>
+            <textarea id="messagetext" class="form-container__textarea" name="message" placeholder="Your message" required></textarea>
+            <span class="error message-error"></span>
+            <input class="form-container__button" type="submit" value="Send Message">
+        </form>
+
+        <div class="social contacts__social">
+            <p class="social__title">I AM SOCIAL</p>
+            <div class="social__separator"></div>
+            <div class="social-icons social__social-icons">
+                <a class="social-icons__icon social-icons__twitter" href="https://twitter.com/" target="_blank"></a>
+                <a class="social-icons__icon social-icons__facebook" href="https://www.facebook.com/" target="_blank"></a>
+                <a class="social-icons__icon social-icons__google" href="https://google.com/" target="_blank"></a>
+                <a class="social-icons__icon social-icons__pinterest" href="https://pinterest.com/" target="_blank"></a>
+                <a class="social-icons__icon social-icons__linkedin" href="https://linkedin.com/" target="_blank"></a>
+            </div>
+        </div>
+
+        <div class="dashed-line-bottom">
+            <img class="dashed-line" alt="dashed-line" src="./images/dashed-line.png">
+        </div>
+
+        <div class="popup popup_hidden">
+            <p>Thank you, I'll contact you soon!</p>
+            <button type="button" onclick="hidePopup()">OK</button>
+        </div>
+
+        <script>
+            function hidePopup() {
+                document.querySelector('.popup').classList.add('popup_hidden')
+            }
+        </script>
+
+    </section>
+
+    <div class="converter">
+        <h3 class="api-title">Currency converter (example of API)</h3>
+        <form class="form-container api" id="apiform">
+            <label for="amount">Amount of money to convert:</label><br>
+            <input type="text" class="form-container__input" id="amount" placeholder="1" required>
+            <p class="amount-error"></p>
+            <label for="amount">The three-letter currency code of the currency you would like to convert from:</label><br>
+            <input type="text" class="form-container__input" id="from" placeholder="EUR" required>
+            <p class="from-error"></p>
+            <label for="amount">The three-letter currency code of the currency you would like to convert to:</label><br>
+            <input type="text" class="form-container__input" id="to" placeholder="USD" required>
+            <p class="to-error"></p>
+            <input class="form-container__button" type="submit" id="convert-button" value="Convert" onclick="convert(); return false">
+        </form>
+    </div>
+</main>
+<script src="./scripts/progressbar.js"></script> 
+<script src="./scripts/slider.js"></script>
+<script src="./scripts/form-validator.js"></script>
+<script src="./scripts/browse-blog.js"></script>
+<script src="./scripts/browse-blog.js"></script>
+<script src="./scripts/close-window.js"></script>
+<script src="./scripts/portfolio-filter.js"></script>
+<script src="./scripts/show-project-details.js"></script>
+<script src="./scripts/converter.js"></script>
+<script src="./scripts/fadein.js"></script>
+<script src="./scripts/form-validator.js"></script>
+<script src="./scripts/nightmode.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+</body>
+</html>
