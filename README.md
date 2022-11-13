@@ -17,4 +17,4 @@ Requirements:
 - Infinite scrolling in blog section;
 - Form with name, email and subject validation;
 - Using local storage for data saving;
-- other CSS and JS effect.
+- other CSS and JS effects.
